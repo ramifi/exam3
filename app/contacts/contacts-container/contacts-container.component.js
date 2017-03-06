@@ -9,19 +9,17 @@
     angular
         .module('myApp.contacts')
         .component('contactsContainer', {
-           // template: 'htmlTemplate',
             templateUrl: 'contacts/contacts-container/contacts-container.template.html',
-                          
-            controller: contactsController,
+            controller: contactsContainerController,
               controllerAs: 'contactsContainerVM',
             bindings: {
                 Binding: '=',
             },
         });
 
-    contactsController.inject = ['contactsService'];
+    contactsContainerController.inject = ['contactsService'];
 
-    function contactsController(contactsService) {
+    function contactsContainerController(contactsService) {
 
         var ctrl = this;
 

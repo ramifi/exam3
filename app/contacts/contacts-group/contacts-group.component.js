@@ -12,14 +12,14 @@
             // template: 'htmlTemplate',
             templateUrl: 'contacts/contacts-group/contacts-group.template.html',
 
-            controller: contactsController,
+            controller: contactsGroupController,
             controllerAs: 'contactsGroupVM',
             bindings: {
                 list: '<'
             }
         });
 
-    function contactsController() {
+    function contactsGroupController() {
 
         var ctrl = this;
         ctrl.itemClicked = function (item) {
