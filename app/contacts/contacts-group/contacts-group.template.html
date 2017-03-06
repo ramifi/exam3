@@ -1,6 +1,6 @@
-<div style="padding: 10px">
+<div class="group">
     <div ng-repeat="item in contactsGroupVM.list">
-        <button ng-click="contactsGroupVM.itemClicked(item)" class="btn btn-default" type="submit">{{item.name}}</button>
+        <p class="contact" ng-click="contactsGroupVM.itemClicked(item)" class="btn btn-default" >{{item.name}}</p>
         <contacts-group ng-if="contactsGroupVM.showContacts[item.id]" list='item.contacts'></contacts-group>
     </div>
 </div>
